@@ -1,0 +1,25 @@
+{
+  "name": "vue-dad-jokes",
+  "description": "A Vue 3 app that uses the new Composition API to handle asynchronous requests to show you the Dad Jokes that you love and need.",
+  "author": {
+    "name": "Carter Snook",
+    "email": "cartersnook04@gmail.com",
+    "url": "https://github.com/CodingCarter"
+  },
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0-0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2"
+  }
+}
