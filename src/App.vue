@@ -54,7 +54,7 @@ export default {
 
     async function updateJokesForm(e) {
       e.preventDefault();
-      updateJokes();
+      await updateJokes();
     }
 
     return { jokes, jokeQuery, updateJokesForm };
