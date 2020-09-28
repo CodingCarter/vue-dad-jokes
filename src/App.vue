@@ -3,7 +3,11 @@
   <form @submit="updateJokesForm">
     <label>
       Query:
-      <input type="text" v-model="jokeQuery" />
+      <input
+        type="text"
+        placeholder="Search the world..."
+        v-model="jokeQuery"
+      />
     </label>
     <input type="submit" value="Go" />
   </form>
