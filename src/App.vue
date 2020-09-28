@@ -46,7 +46,13 @@ export default {
 
       const res = await fetch(
         `https://icanhazdadjoke.com/search?term=${jokeQuery.value}&limit=10`,
-        { headers: { accept: "application/json" } }
+        {
+          headers: {
+            accept: "application/json",
+            "User-Agent":
+              "Vue Dad Jokes YouTube Tutorial Demo (https://github.com/CodingCarter/vue-dad-jokes)",
+          },
+        }
       );
 
       const data = await res.json();
