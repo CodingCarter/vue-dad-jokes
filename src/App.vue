@@ -19,7 +19,13 @@
     <a href="https://icanhazdadjoke.com/api" target="_blank">
       I Can Haz Dad Joke API
     </a>
-    with an MIT open-source license.
+    with an
+    <a
+      href="https://github.com/CodingCarter/vue-dad-jokes/blob/master/LICENSE"
+      target="_blank"
+    >
+      MIT open-source license</a
+    >.
   </p>
 </template>
 
@@ -28,17 +34,15 @@ import { ref } from "vue";
 
 export default {
   setup() {
-    const jokeQuery = ref("");
     const jokes = ref(null);
-
-    const reqOptions = { headers: { accept: "application/json" } };
+    const jokeQuery = ref("");
 
     async function updateJokes() {
       jokes.value = null;
 
       const res = await fetch(
         `https://icanhazdadjoke.com/search?term=${jokeQuery.value}&limit=10`,
-        reqOptions
+        { headers: { accept: "application/json" } }
       );
 
       const data = await res.json();
