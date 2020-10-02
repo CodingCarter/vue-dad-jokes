@@ -29,7 +29,8 @@
       target="_blank"
     >
       MIT open-source license</a
-    >.
+    >.  (<a href="https://youtu.be/pUkx8nUJNJU"
+      target="_blank">Watch Tutorial</a>)
   </p>
 </template>
 
